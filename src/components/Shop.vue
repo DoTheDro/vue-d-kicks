@@ -40,18 +40,20 @@
 </script>
 
 <template>
-    <div class="px-3 flex flex-col gap-5">
+    <div class="px-3 flex flex-col gap-5 mb-28">
         <h2 class="text-3xl text-gray-100 font-bold text-center underline">Our Shop</h2>
         <p class="text-lg text-gray-100 text-center">Lorem, ipsum dolor.</p>
         <div class="flex flex-wrap">
-            <div class="m-auto" v-for="(value, key) in products">
-                <div class="bg-gray-200 p-6 m-3 custom-min-height-sm flex rounded-lg">
+            <div class="m-auto sm:w-6/12 sm:box-shadow md:w-2/6" v-for="(value, key) in products">
+                <div class="bg-gray-200 p-6 m-3 custom-min-height-sm flex rounded-lg sm:box-shadow">
                     <button class="flex flex-col justify-between items-center" @click="productView(key)">
-                        <div>
+                        <div class="max-w-xs">
                             <img :src="value.image" alt="">
                         </div>
-                        <h3>{{ value.name }}</h3>
-                        <h4>{{ value.price }}</h4>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-2xl font-bold">{{ value.name }}</h3>
+                            <h4 class="text-lg font-medium">$ {{ value.price }}</h4>
+                        </div>
                     </button>
                 </div>
             </div>

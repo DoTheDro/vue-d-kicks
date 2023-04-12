@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html, body {
-  background-color: #374151;
+  background-color: #292A2D;
   font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -19,6 +19,30 @@ html, body {
   min-height: 420px;
 }
 
+.height-cust {
+  height: 500px;
+}
+
 .custom-height {
   height: 75vh;
+}
+
+.custom-max-width {
+  max-width: 128px;
+}
+
+.max-width-cust {
+  max-width: 1280px;
+}
+
+@media screen and (min-width: 640px) {
+  .custom-height {
+    height: 85vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .height-cust {
+    height: 450px;
+  }
 }

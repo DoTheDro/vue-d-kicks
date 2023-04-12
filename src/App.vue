@@ -3,9 +3,16 @@
   import Hero from './components/Hero.vue'
   import AboutUs from './components/AboutUs.vue'
   import Shop from './components/Shop.vue'
+  import Reservations from './components/Reservations.vue'
+  import Footer from './components/Footer.vue'
 
   export default {
-    components: { Navbar, Hero, AboutUs, Shop }
+    components: { Navbar, 
+      Hero, 
+      AboutUs, 
+      Shop, 
+      Reservations, 
+      Footer }
   }
 </script>
 
@@ -15,5 +22,7 @@
     <Hero />
     <AboutUs />
     <Shop />
+    <Reservations />
   </main>
+  <Footer />
 </template>
