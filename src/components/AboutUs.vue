@@ -1,8 +1,10 @@
 <script>
+    import aboutUsImg from '../assets/images/hero-section-image.png'
+
     export default {
         data() {
             return {
-                image: '/src/assets/images/hero-section-image.png'
+                image: aboutUsImg
             }
         }
     }

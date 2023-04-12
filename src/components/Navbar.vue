@@ -12,7 +12,7 @@
 
 <template>
     <header>
-        <div class="bg-gray-800 pb-4 mb-5 box-shadow">
+        <div class="bg-gray-800 pb-4 mb-2 box-shadow">
             <div class="w-full pb-5">
                 <a class="p-2 w-2/5 flex m-auto border-white border-2 rounded-full" href="/">
                     <img class="rounded-full" :src="logo" alt="Site Logo Img">

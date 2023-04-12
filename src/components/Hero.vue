@@ -9,8 +9,8 @@
 </script>
 
 <template>
-    <div class="px-3 custom-height">
-        <div class="bg-gray-700">
+    <div class="px-3 custom-height custom-bg-color">
+        <div >
             <img class="image-flip" :src="heroImage" alt="Hero Section Image">
         </div>
 

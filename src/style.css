@@ -15,6 +15,10 @@ html, body {
   box-shadow: 3px 3px 18px #121212;
 }
 
+.custom-min-height-sm {
+  min-height: 420px;
+}
+
 .custom-height {
   height: 75vh;
 }
