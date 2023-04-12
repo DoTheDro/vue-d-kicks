@@ -2,7 +2,7 @@
     export default {
         data() {
             return {
-                siteLogo: '.././src/assets/images/logo-image.png'
+                siteLogo: './src/assets/images/logo-image.png'
             }
         }
     }
