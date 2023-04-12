@@ -1,8 +1,10 @@
 <script>
+    import heroImage from '../assets/images/image-shoe.png'
+
     export default {
         data() {
             return {
-                heroImage: '/src/assets/images/image-shoe.png'
+                heroImage: heroImage
             }
         }
     }
