@@ -7,12 +7,17 @@
   import Footer from './components/Footer.vue'
 
   export default {
-    components: { Navbar, 
+    components: { Navbar,
       Hero, 
       AboutUs, 
       Shop, 
       Reservations, 
-      Footer }
+      Footer },
+      data() {
+        return {
+          show: false
+        }
+      }
   }
 </script>
 

@@ -11,8 +11,10 @@
     import product10 from '../assets/images/vans-skate-shoe-fire.png'
     import product11 from '../assets/images/vans-skate-shoe.png'
     import product12 from '../assets/images/vans-slip-on-shoe.png'
+    import Modal from './Modal.vue'
 
     export default {
+        components: { Modal },
         data() {
             return {
                 products: [
@@ -28,24 +30,33 @@
                     { name: 'Skater - Fire', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio esse eveniet eaque possimus, laboriosam magnam!', image: product10, price: '192.00', brand: 'vans' },
                     { name: 'Vans Skater', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio esse eveniet eaque possimus, laboriosam magnam!', image: product11, price: '147.00', brand: 'vans' },
                     { name: 'Vans Slip-on', description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio esse eveniet eaque possimus, laboriosam magnam!', image: product12, price: '108.00', brand: 'vans' },
-                ]
+                ],
+                show: false,
+                itemShowcase: ''
             }
         },
         methods: {
             productView(key) {
-                console.log(key)
+                this.itemShowcase = this.products[key]
+                this.show = !this.show
+            },
+            closeModal() {
+                this.show = !this.show
             }
         }
     }
 </script>
 
 <template>
-    <div class="px-3 flex flex-col gap-5 mb-28">
+    <div class="ease-in duration-500" v-if="show">
+        <Modal :content="itemShowcase" @close="closeModal" />
+    </div>
+    <div class="px-3 flex flex-col gap-5 mb-28" id="shop">
         <h2 class="text-3xl text-gray-100 font-bold text-center underline">Our Shop</h2>
         <p class="text-lg text-gray-100 text-center">Lorem, ipsum dolor.</p>
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap md:max-w-5xl md:m-auto">
             <div class="m-auto sm:w-6/12 sm:box-shadow md:w-2/6" v-for="(value, key) in products">
-                <div class="bg-gray-200 p-6 m-3 custom-min-height-sm flex rounded-lg sm:box-shadow">
+                <div class="bg-gray-200 p-6 m-3 custom-min-height-sm flex rounded-lg sm:box-shadow md:hover:scale-110 md:duration-500 md:hover:box-shadow">
                     <button class="flex flex-col justify-between items-center" @click="productView(key)">
                         <div class="max-w-xs">
                             <img :src="value.image" alt="">

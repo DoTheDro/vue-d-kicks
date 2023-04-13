@@ -21,15 +21,15 @@
             <div class="sm:w-6/12 sm:inline-flex sm:justify-end sm:pr-4 sm:items-center md:max-w-screen-sm">
                 <ul class="flex justify-evenly sm:gap-8">
                     <li class="text-gray-100 text-xl">
-                        <a href="#">About Us</a>
+                        <a href="#about">About Us</a>
                     </li>
                     
                     <li class="text-gray-100 text-xl">
-                        <a href="#">Shop</a>
+                        <a href="#shop">Shop</a>
                     </li>
                     
                     <li class="text-gray-100 text-xl">
-                        <a href="#">Reservations</a>
+                        <a href="#reservations">Reservations</a>
                     </li>
                 </ul>
             </div>
