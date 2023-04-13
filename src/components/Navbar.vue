@@ -2,6 +2,7 @@
     import siteLogo from '../assets/images/logo-image.png'
 
     export default {
+        props: ["checkLink"],
         data() {
             return {
                 logo: siteLogo
