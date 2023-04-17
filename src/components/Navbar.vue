@@ -12,7 +12,10 @@
 </script>
 
 <template>
-    <header>
+    <header data-aos="fade-down"
+            data-aos-duration="700"
+            data-aos-once="true"
+    >
         <div class="bg-gray-800 pb-4 mb-2 box-shadow sm:pt-4 sm:flex sm:align-center md:justify-center">
             <div class="w-full pb-5 sm:w-6/12 sm:inline-flex sm:pb-0 sm:pl-4 md:max-w-screen-sm">
                 <a class="p-2 w-2/5 flex m-auto border-white border-2 rounded-full custom-max-width sm:m-0" href="/">

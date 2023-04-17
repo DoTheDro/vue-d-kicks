@@ -51,7 +51,10 @@
     <div class="ease-in duration-500" v-if="show">
         <Modal :content="itemShowcase" @close="closeModal" />
     </div>
-    <div class="px-3 flex flex-col gap-5 mb-28" id="shop">
+    <div data-aos="fade-down"
+        data-aos-duration="700"
+        data-aos-once="true"
+    class="px-3 flex flex-col gap-5 mb-28" id="shop">
         <h2 class="text-3xl text-gray-100 font-bold text-center underline">Our Shop</h2>
         <p class="text-lg text-gray-100 text-center">Lorem, ipsum dolor.</p>
         <div class="flex flex-wrap md:max-w-5xl md:m-auto">

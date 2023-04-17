@@ -10,7 +10,9 @@
 </script>
 
 <template>
-    <div class="w-full h-screen bg-black bg-opacity-80 top-0 left-0 fixed flex items-center justify-center z-40 px-4" @click.self="closeModal">
+    <div data-aos="zoom-out"
+        data-aos-duration="300"
+    class="w-full h-screen bg-black bg-opacity-80 top-0 left-0 fixed flex items-center justify-center z-40 px-4" @click.self="closeModal">
         <div class="h-3/4 w-full bg-gray-100 flex flex-col justify-evenly rounded-lg p-4 max-w-md md:max-w-3xl md:flex-row md:h-3/5 md:items-center">
             <div class="md:w-6/12 md:inline-block md:pr-5">
                 <img :src="content['image']" :alt="content['name']">

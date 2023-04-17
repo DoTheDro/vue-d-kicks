@@ -11,7 +11,10 @@
 </script>
 
 <template>
-    <div class="mx-3 px-4 py-6 flex flex-col gap-5 mb-28 bg-gray-700 rounded-lg box-shadow sm:gap-9 md:max-w-7xl md:mx-auto" id="about">
+    <div data-aos="zoom-in"
+        data-aos-duration="700"
+        data-aos-once="true"
+    class="mx-3 px-4 py-6 flex flex-col gap-5 mb-28 bg-gray-700 rounded-lg box-shadow sm:gap-9 md:max-w-7xl md:mx-auto" id="about">
         <h2 class="text-3xl text-gray-100 font-bold text-center underline">
             About Us
         </h2>

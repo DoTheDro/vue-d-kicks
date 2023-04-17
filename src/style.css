@@ -6,6 +6,7 @@ html, body {
   background-color: #292A2D;
   font-family: 'Lexend Deca', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .image-flip {
